@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh; /* vijual part of the brwser */
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: rgb(209, 220, 250);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.nav ul li {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  line-height: 8px;
+  letter-spacing: 0.5px;
+}
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+ 
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.logo{
+  font-weight: 300;
+  line-height: 1%;
+}
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.page_container{
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  height: 150vh;
+  margin-left: 4%;
+}
+.right_pane{
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right_pane  div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50%;
+  width: 100%;
+}
+
+.right_pane .info{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+}
+
+.right_pane .info h1{
+  color:  rgb(248, 52, 52);
+  position: absolute;
+  top: 13%;
+  left: 20%
+}
+
+.right_pane .info p{
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  line-height: 22px;
+}
+
+.right_pane .info #read_more{
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid rgb(248,52,52);
+  color:#000;
+  bottom: 20%;
+  left: 60px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.right_pane .info #read_more:hover{
+  cursor: pointer;
+  color: rgb(248, 52, 52);
+}
+
+.left_pane{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left_pane div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(244, 249, 255);
+  position: relative;
+}
+
+
+.left_pane .drawing{
+  height: 100%;
+  width: 50%;
+  background-image: url('https://www.pngitem.com/pimgs/m/148-1480760_olives-drawing-olive-branch-olive-leaf-drawing-png.png') ;
+  background-size: 246px;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+ 
+ 
+}
+
+.name{
+  height: 10%;
+  position: absolute;
+  text-align: center;
+  
+}
+.name_title{
+  
+  color: rgb(211, 19, 19);
+}
+.name_def{
+  color:#000;
+}
+#see_menu{
+  background-color: #fff;
+  border: 1px solid red;
+  color: rgb(248, 52, 52);
+  width: 20%;
+  height: 7%;
+  margin-top: 15px;
+}
+
+#see_menu:hover{
+  cursor: pointer;
+  background-color:rgb(248, 52, 52);
+  color: #fff;
+}
+
+.left_pane .worker{
+  background-color:rgb(211, 19, 19);
+}
+
+.left_pane .worker_pic{
+  height: 75%;
+  width: 80%;
+  background-image: url('https://images.unsplash.com/photo-1623594629187-2a68392cbab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+  margin-bottom: 18%;
+}
