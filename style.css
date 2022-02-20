@@ -19,11 +19,13 @@ body {
 }
 .nav {
   position: fixed;
-  background-color: rgb(209, 220, 250);
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #000;
   top: 0;
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .nav .container {
@@ -60,6 +62,7 @@ body {
 }
 
 .nav a {
+  -webkit-text-stroke: 1px black;
   color: #fff;
   text-decoration: none;
   padding: 7px 15px;
@@ -76,6 +79,10 @@ body {
   font-weight: bold;
 }
 
+.logo_title{
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
 .logo{
   font-weight: 300;
   line-height: 1%;
