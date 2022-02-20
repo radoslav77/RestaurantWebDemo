@@ -118,7 +118,7 @@ body {
 
 .right_pic{
   
-  background-image: url('https://images.unsplash.com/photo-1626200926749-cccc3d2caf12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+  background-image: url('https://images.unsplash.com/photo-1588471790208-16825e6bcc24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
   object-fit: fill;
 }
 
@@ -297,16 +297,114 @@ body {
  outline: none;
 }
 
-.book_table #submit{
+.book_table #submit_reservation{
   background-color: #fff;
   color: rgb(246,52,52);
 }
 
-.book_table #submit:hover{
+.book_table #submit_reservation:hover{
   cursor: pointer;
   background-color: rgb(197, 191, 191);
 }
 
-.book_table #submit:active{
+.book_table #submit_reservation:active{
   transform: scale(95%);
+}
+.contact_us{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#contact{
+  text-align: center;
+  color: rgb(246,52,52);
+  font-weight: 400;
+}
+
+.contact_ditails{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 20%;
+line-height: 28px;
+font-weight: 900;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.address{
+  width: 80%;
+  margin-left: 5%;
+  padding-left: 10%;
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+.input input{
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.input input:active{
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+.input input:hover{
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+.input input:focus{
+  outline: none;
+  border-bottom: 3px solid #000;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.input textarea:active{
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+.input textarea:hover{
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+}
+
+textarea:focus{
+  outline: none;
+  border-bottom: 3px solid #000;
+}
+
+#submit{
+  margin-top: 30px;
+  width: 60%;
+  margin-left: 20%;
+  height: 42px;
+  background-color: #fff;
+}
+
+#submit:active{
+  transform: scale(90%);
+}
+
+.map{
+  margin-top: 50px;
+  width: 100%;
 }
