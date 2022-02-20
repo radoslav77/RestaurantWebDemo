@@ -113,6 +113,13 @@ body {
   background-position: center center;
   height: 50%;
   width: 100%;
+  background-attachment: fixed;
+}
+
+.right_pic{
+  
+  background-image: url('https://images.unsplash.com/photo-1626200926749-cccc3d2caf12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+  object-fit: fill;
 }
 
 .right_pane .info{
@@ -152,6 +159,10 @@ body {
 .right_pane .info #read_more:hover{
   cursor: pointer;
   color: rgb(248, 52, 52);
+}
+
+#read_more:active{
+  transform: scale(95%);
 }
 
 .left_pane{
@@ -213,6 +224,9 @@ body {
   background-color:rgb(248, 52, 52);
   color: #fff;
 }
+#see_menu:active{
+  transform: scale(95%);
+}
 
 .left_pane .worker{
   background-color:rgb(211, 19, 19);
@@ -223,4 +237,76 @@ body {
   width: 80%;
   background-image: url('https://images.unsplash.com/photo-1623594629187-2a68392cbab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
   margin-bottom: 18%;
+}
+
+.pic_container {
+  position: relative;
+  overflow: hidden;
+  width: 90vw;
+  height: 150vh;
+  margin-left: 4%;
+  margin-top: 10%;
+}
+
+.pic_container div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.opening_hours{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 45%;
+  border: 1px solid red;
+}
+
+.opening_hours h1{
+  color: rgb(248, 52, 52);
+  margin-bottom: 10px;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.opening_hours h3{
+  font-weight: 100;
+  line-height: 2rem;
+}
+
+.book_table{
+  width: 80%;
+  border: 1px solid rgb(248,52,52);
+  padding-left: 10%;
+  padding-top: 12%;
+  background-color: rgb(248, 52, 52);
+ 
+}
+.book_table input{
+  width: 20%;
+  height: 36px;
+  border: 1px solid #fff;
+  background-color: rgb(246,52,52);
+  color: #fff;
+}
+
+.book_table input:focus{
+ outline: none;
+}
+
+.book_table #submit{
+  background-color: #fff;
+  color: rgb(246,52,52);
+}
+
+.book_table #submit:hover{
+  cursor: pointer;
+  background-color: rgb(197, 191, 191);
+}
+
+.book_table #submit:active{
+  transform: scale(95%);
 }
