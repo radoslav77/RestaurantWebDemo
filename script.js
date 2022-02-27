@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav')
 const SeeMenuBtn = document.getElementById('see_menu')
-
+const BurgerIcon = document.getElementById('icon')
 
 window.addEventListener('scroll', fixedNav)
 
@@ -20,3 +20,6 @@ SeeMenuBtn.addEventListener('click', () => {
     var LinkMenu = document.createElement('a')
     console.log(123)
 })
+
+
+
