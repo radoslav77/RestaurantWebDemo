@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh; /* vijual part of the brwser */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  line-height: 8px;
+  letter-spacing: 0.5px;
+}
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav a {
+  -webkit-text-stroke: 1px black;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.logo_title {
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+.logo {
+  font-weight: 300;
+  line-height: 1%;
+}
