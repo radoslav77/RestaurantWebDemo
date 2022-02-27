@@ -1,4 +1,6 @@
 const nav = document.querySelector('.nav')
+const SeeMenuBtn = document.getElementById('see_menu')
+
 
 window.addEventListener('scroll', fixedNav)
 
@@ -10,3 +12,11 @@ function fixedNav() {
         nav.classList.remove('active')
     }
 }
+
+
+
+SeeMenuBtn.addEventListener('click', () => {
+    
+    var LinkMenu = document.createElement('a')
+    console.log(123)
+})
