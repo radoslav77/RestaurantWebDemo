@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="menu.css">
@@ -15,6 +16,9 @@
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="#left_bottom_pic"> Reservation</a></li>
             <li><a href="ourstory.html">Story</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="#contact_us">Contact</a></li>
         </ul>
@@ -240,5 +244,15 @@
 </body>
 <script src="script.js"></script>
 <script src="menu.js"></script>
+<script>
+    function myFunction() {
+        var x = document.querySelector(".nav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+</script>
 
 </html>

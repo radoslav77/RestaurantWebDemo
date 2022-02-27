@@ -149,13 +149,24 @@ body {
   line-height: 22px;
 }
 
+#read_more_link {
+  position: absolute;
+  background-color: #fff;
+
+  color: #000;
+  bottom: 20%;
+  left: 60px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
 .right_pane .info #read_more {
   position: absolute;
   background-color: #fff;
   border: 1px solid rgb(248, 52, 52);
   color: #000;
-  bottom: 20%;
-  left: 60px;
+  bottom: 2px;
+  left: -3px;
   padding: 16px;
   margin-top: 10px;
 }
@@ -454,6 +465,11 @@ textarea:focus {
   }
   .logo_title {
     font-size: 13px;
+  }
+  #submit_reservation {
+    margin-top: 20px;
+    width: 40%;
+    margin-left: 75px;
   }
 }
 
