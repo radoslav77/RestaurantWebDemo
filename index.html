@@ -90,9 +90,9 @@
             <br id="left_bottom_pic">
             <div class="book_table" id="book_table">
                 <h1 class="reservation">Make a Reservation</h1>
-                <input type="date" name="date" id="Date" placeholder="Date" value="Date">
-                <input type="time" name="time" id="Time" value="Time">
-                <input type="number" name="people" id="People" value="People">
+                <input type="date" name="date" id="Date" placeholder="Date" required>
+                <input type="time" name="time" id="Time" placeholder="Time" required>
+                <input type="number" name="people" id="People" placeholder="0" min="0" required>
                 <input type="submit" value="Book a Table" id="submit_reservation">
             </div>
         </div>
@@ -127,12 +127,12 @@
                 <div class="form">
                     <form action="">
                         <div class="input">
-                            <input type="text" value="Name">
-                            <input type="email" name="email" id="Email" value="Email">
+                            <input type="text" value="Name" required>
+                            <input type="email" name="email" id="Email" value="Email" required>
                         </div>
 
                         <textarea name="Message" id="Message" cols="30" rows="4"
-                            placeholder="Write Your Message here..."></textarea>
+                            placeholder="Write Your Message here..." required></textarea>
                         <input type="submit" value="Submit" id="submit">
                     </form>
                 </div>

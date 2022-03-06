@@ -307,6 +307,18 @@ body {
   text-align: center;
   margin-bottom: 3rem;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
 .book_table input {
   width: 20%;
   height: 36px;
@@ -470,6 +482,61 @@ textarea:focus {
     margin-top: 20px;
     width: 40%;
     margin-left: 75px;
+  }
+  .left_pane .drawing {
+    height: 50%;
+    width: 50%;
+    background-image: url('https://www.pngitem.com/pimgs/m/148-1480760_olives-drawing-olive-branch-olive-leaf-drawing-png.png');
+    background-size: 125px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+  #see_menu_link {
+    background-color: #fff;
+    border: 1px solid red;
+    color: rgb(248, 52, 52);
+    width: 40%;
+    height: 4%;
+    margin-top: 15px;
+  }
+
+  .right_pane .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .right_pane .info h1 {
+    color: rgb(248, 52, 52);
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    font-size: 18px;
+  }
+
+  .right_pane .info p {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* line-number */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+  .left_pane .worker_pic {
+    height: 75%;
+    width: 80%;
+    background-image: url('https://images.unsplash.com/photo-1623594629187-2a68392cbab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    margin-bottom: 15%;
+    background-size: 250px;
+    background-repeat: no-repeat;
   }
 }
 
