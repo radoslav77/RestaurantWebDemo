@@ -34,6 +34,7 @@ SubmitInput.addEventListener('click', () =>{
 
     console.log(timeInput,'-',dateinput, '-', peoppleinput)
     alert('Your Booking Is Complited!')
+
     location.reload()
 })
 
@@ -50,6 +51,11 @@ SubmitContact.addEventListener('click', () =>{
     let contactMessage = ConatctMessage.value
 
     console.log(contactName,'-',contactEmail, '-',contactMessage)
+    
+
     alert('Your Request has been submited!')
     location.reload()
 })
+
+
+
