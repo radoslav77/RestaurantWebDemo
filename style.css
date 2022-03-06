@@ -538,6 +538,17 @@ textarea:focus {
     background-size: 250px;
     background-repeat: no-repeat;
   }
+  .opening_hours h1 {
+    color: rgb(248, 52, 52);
+    margin-bottom: 5px;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .opening_hours h3 {
+    font-weight: 50;
+    line-height: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
